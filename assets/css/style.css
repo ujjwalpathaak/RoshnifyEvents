@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6{
 	text-align: justify;
 }
 .testimonial > p{
-	min-height: 90px;
+	min-height: 120px;
 }
 #testimonials .testimonial > img {
     border-radius: 100%;
@@ -717,4 +717,24 @@ h1, h2, h3, h4, h5, h6{
 	#header {
 		background-size: cover;
 	}
+}
+
+@media (max-width: 850px) {
+    .header-wrapper-inner{
+        font-size: 10px;
+    }
+    .header-text{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+    .slogan-image {
+        max-width: 40vw;
+    }
+    .testimonial{
+        padding: 0 10px;
+    }
+    .header-phone{
+    display: none;}
 }
