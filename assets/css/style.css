@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6{
 
 #contact {
     position: relative; /* Required to position the overlay */
-    background-image: url(../images/newsletter-bg.jpg);
+    background-image: url(../images/contact-us.jpg);
     background-size: cover;
     background-position: center;
     color: white;
