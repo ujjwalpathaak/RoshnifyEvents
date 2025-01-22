@@ -746,11 +746,36 @@ h1, h2, h3, h4, h5, h6{
         width: 100px;
     }
     .slogan-image {
-        max-width: 40vw;
+        max-width: 30vw;
     }
     .testimonial{
         padding: 0 10px;
     }
+    .testimonial{
+        text-align: left;
+    }
     .header-phone{
-    display: none;}
+        display: none;
+    }
+    #contact {
+        padding: 80px 0;
+    }
+    .LondrinaSolid{
+        font-size: 4em;
+    }
+    .content-block {
+        padding: 60px 0 0 0;
+    }
+
+    .parallax {
+        padding: 20px 0;
+    }
+}
+@media (max-width: 450px) {
+    #parallax-bg {
+        background-image: url('../images/phone-banner.jpeg');
+    }
+    .slogan-image {
+        max-width: 40vw;
+    }
 }
