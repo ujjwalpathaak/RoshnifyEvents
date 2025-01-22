@@ -11,6 +11,18 @@
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon for browsers -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Favicon for Android and iOS -->
+    <link rel="icon" href="assets/images/android-chrome-192x192.png" sizes="192x192">
+
+    <!-- Favicon for Apple Devices (iOS) -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+    <!-- Favicon for Safari -->
+    <link rel="icon" href="assets/images/android-chrome-192x192.png" type="image/svg+xml">
 </head>
 
 <body>
@@ -19,15 +31,15 @@
 			<div id="header" class="content-block parallax header-wrapper">
 				<div class="header-wrapper-inner">
 					<section class="top flex justify-between items-center">
-						<div class="flex items-center">
+						<div class="flex items-start md:items-center md:flex-row flex-col">
 							<a class="logo md:w-36 mr-6" href="/"><img src="assets/images/logo-name.svg"
 									alt="Description of the image" class="logo"></a>
-							<span class="header-text text-2xl font-bold mt-2">Events | Noida</span>
+							<span class="header-text text-base md:text-2xl font-bold mt-0 md:mt-2">Events | Noida</span>
 						</div>
 						<div class="">
-							<p class="text-3xl flex items-center gap-2"><span
-									class="font-bold text-base md:text-2xl text-white"><span class="header-phone">Just a
-										call away </span>+91-9810246533</span></p>
+							<p class="text-3xl flex items-end md:items-center md:flex-row flex-col gap-2"><span
+									class="font-bold text-base md:text-2xl text-white"><span class="header-phone block md:inline">Just a
+										call away</span> +91-9810246533</span></p>
 						</div>
 					</section>
 					<section class="center">
@@ -91,7 +103,7 @@
 		<div class="content-block parallax" id="services">
 			<div class="container text-center my-20">
 				<header class="block-heading cleafix">
-					<h1 class="text-6xl">Affordability, Style, and Quality Delivery</h1>
+					<h1 class="parallax-text-1">Affordability, Style, and Quality Delivery</h1>
 					<p class="mt-12 text-lg text-center px-4 md:text-2xl">From planning to perfection! 🌟 As an event
 						planner, I don’t just create
 						the
@@ -265,7 +277,7 @@
 
 	<div class="p-6 flex justify-between items-center" id="footer">
 		<span>© All right Reversed. ROSHNIfy</span>
-		<span>Roshni Pathak | Mahagun Moderne, Sector-78, Noida</span>
+		<span class="text-end">Roshni Pathak | Mahagun Moderne, Sector-78, Noida</span>
 	</div>
 	</div>
 
