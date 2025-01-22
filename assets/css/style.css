@@ -322,36 +322,38 @@ h1, h2, h3, h4, h5, h6{
 /*////////////////////////////////////////////////////////////////////////
 //  04 - Parallax styles
 ///////////////////////////////////////////////////////////////////////*/
-
-.content-block{
-	background:transparent no-repeat center center fixed;
-	-webkit-background-size:100%;
-	-moz-background-size:100%;
-	-o-background-size:100%;
-	background-size:100%;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	overflow:hidden;
-	padding: 60px 0;
-}
-.parallax{
-	padding: 80px 0;
-}
-.parallax-bg{
-    height: 100vh;
-	padding: 0;
-}
-
-.block-body {
-	margin-top: 30px;
-}
-
-#services {
-    position: relative; /* Required to position the overlay */
-    background-image: url(../images/parallax1.jpg);
+/* General Styles for Parallax */
+.content-block {
+    background: transparent no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+/* Adjusting Parallax Padding */
+.parallax {
+    padding: 80px 0;
+}
+
+.parallax-bg {
+    height: 100vh;
+    padding: 0;
+}
+
+/* Block Body */
+.block-body {
+    margin-top: 30px;
+}
+
+/* Parallax Section: Services */
+#services {
+    position: relative;
+    background-image: url('../images/parallax1.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Ensures parallax effect */
     background-position: center;
     color: white;
 }
@@ -362,18 +364,20 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
-    z-index: 1; /* Places the overlay below the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+    z-index: 1;
 }
 #services > * {
     position: relative;
-    z-index: 2; /* Ensures the content appears above the overlay */
+    z-index: 2; /* Content above overlay */
 }
 
+/* Parallax Section: Header Background */
 #parallax-bg {
-    position: relative; /* Required to position the overlay */
-    background-image: url(../images/header-bg.jpeg);
+    position: relative;
+    background-image: url('../images/header-bg.jpeg');
     background-size: cover;
+    background-attachment: fixed; /* Ensures parallax effect */
     background-position: center;
     color: white;
 }
@@ -384,13 +388,20 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) as needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay effect */
     z-index: 1;
 }
+#parallax-bg > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Parallax Section: Parallax Effect */
 #parallax {
-    position: relative; /* Required to position the overlay */
-    background-image: url(../images/parallax2.jpg);
+    position: relative;
+    background-image: url('../images/parallax2.jpg');
     background-size: cover;
+    background-attachment: fixed; /* Ensures parallax effect */
     background-position: center;
     color: white;
 }
@@ -401,22 +412,20 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) as needed */
-    z-index: 1; /* Places the overlay below the text */
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay effect */
+    z-index: 1;
 }
 #parallax > * {
     position: relative;
-    z-index: 2; /* Ensures the content appears above the overlay */
-}
-#parallax-bg > * {
-    position: relative;
-    z-index: 2; /* Ensures the content appears above the overlay */
+    z-index: 2;
 }
 
+/* Parallax Section: Contact */
 #contact {
-    position: relative; /* Required to position the overlay */
-    background-image: url(../images/contact-us.jpg);
+    position: relative;
+    background-image: url('../images/contact-us.jpg');
     background-size: cover;
+    background-attachment: fixed; /* Ensures parallax effect */
     background-position: center;
     color: white;
     padding: 150px 0;
@@ -428,21 +437,29 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.5) as needed */
-    z-index: 1; /* Places the overlay below the text */
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay effect */
+    z-index: 1;
 }
 #contact > * {
     position: relative;
-    z-index: 2; /* Ensures the content appears above the overlay */
+    z-index: 2;
 }
 
-#parallax h1{
-	margin-bottom: 60px;
-	color: white;
+/* Parallax Heading */
+#parallax h1 {
+    margin-bottom: 60px;
+    color: white;
 }
 
-
-
+/* Mobile Fix: Disable Parallax Effect */
+@media (max-width: 768px) {
+    #services,
+    #parallax-bg,
+    #parallax,
+    #contact {
+        background-attachment: scroll; /* No parallax effect on mobile */
+    }
+}
 
 /*////////////////////////////////////////////////////////////////////////
 //  05 - Recent works
@@ -601,7 +618,6 @@ h1, h2, h3, h4, h5, h6{
     max-width: 500px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .socials-column {
